@@ -9,7 +9,7 @@ destination_folder = r"C:\Users\Tina\Downloads"
 # Create destination folders if they don't exist
 folders = {
 	"images": [".jpg", ".jpeg", ".png", ".gif"],
-	"documents": [".pdf", ".docx", ".txt", ".xlsx"],
+	"documents": [".pdf", ".docx", ".txt", ".xlsx", ".csv", ".parquet", ".xml", ".json"],
 	"others": []
 }
 for folder in folders:
