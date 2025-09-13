@@ -29,7 +29,7 @@ for filename in os.listdir(source_folder):
 
 	# Decide where to move the file
 	moved = False
-	for folder, extensions in folder.items():
+	for folder, extensions in folders.items():
 		if ext in extensions:
 			shutil.move(filepath, os.path.join(destination_folder, folder, new_name))
 			moved = True
