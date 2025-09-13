@@ -16,17 +16,16 @@ This Python script automates the process of renaming and organizing files. It sc
 2. Update the folder paths in the script.
 ```
 python
-
+```
 source_folder = r"C:\Users\Tina\Downloads"
 destination_folder = r"C:\Users\Tina\Downloads"
-```
   
 3. Run the script:
 ```
 bash
-python sort_files.py
 ```
-  
+python sort_files.py
+
 4. Your files will be renamed and moved into:
 - Sorted/images/
 - Sorted/documents/
@@ -36,14 +35,13 @@ python sort_files.py
 - To add new categories, edit the *folders* dictionary:
 ```
 python
-
+```
 folders = {
 	"images": [".jpg",".jpeg",".png",".gif"]
 	"documents": [".pdf",".docx",".txt",".xlsx"]
 	"videos": [".mp4",".mov",".avi"]
 	"others": []
 }
-```
 
 - Any file type not listed will be placed into *others*.
 
@@ -51,22 +49,21 @@ folders = {
 Before:
 ```
 markdown
+```
 Downloads/
 	report.pdf
 	photo.png
 	notes.txt
-```
   
 After running:
 ```
 markdown
-
+```
 Sorted/
 	documents/
 		20250913_report.pdf
 		20250913_notes.txt
 	images/
 		20250913_photo.png
-```
   
 
