@@ -7,11 +7,11 @@ source_folder = r"C:\Users\Tina\Downloads"
 destination_folder = r"C:\Users\Tina\Downloads"
 
 # Create destination folders if they don't exist
-folders = (
+folders = {
 	"images": [".jpg", ".jpeg", ".png", ".gif"],
 	"documents": [".pdf", ".docx", ".txt", ".xlsx"],
 	"others": []
-)
+}
 for folder in folders:
 	os.makedirs(os.path.join(destination_folder, folder), exist_ok=True)
 
@@ -20,8 +20,8 @@ for filename in os.listdir(source_folder):
 	filepath = os.path.join(source_folder, filename)
 
 	if os.path.isfile(filepath):
-	name, ext = os.path.splitext(filename)
-	ext = ext.lower()
+		name, ext = os.path.splitext(filename)
+		ext = ext.lower()
 
 	# Add date prefix to filename
 	date_prefix = datetime.now().strftime("%Y%m%d")
